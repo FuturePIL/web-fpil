@@ -1,0 +1,56 @@
+.home{
+  width: 100%;
+  position: relative;
+}
+.main-mennu{
+  position: absolute;
+  top: 0;
+  left: 80px;
+  z-index: 999;
+  width: 160px;
+}
+.main-mennu ul{
+  width: 100%;
+  background: wheat;
+  opacity:0.3; 
+  -moz-opacity:0.3;
+  -khtml-opacity: 0.3;
+}
+.main-mennu ul li {
+  width: 100%;
+  height: 50px;
+  border: 1px solid black;
+  
+}
+.main-mennu ul li:hover{
+  background: red;
+}
+.slide-show{
+  width: 100%;
+}
+[nz-carousel-content] {
+    text-align: center;
+    width: 100%;
+    height: 320px;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+  }
+
+  h3 {
+    color: #fff;
+  }
+  p {
+    margin: 0;
+  }
+  .main-card{
+    position: absolute;
+    top: 0;
+    left: 240px;
+    z-index: 999;
+    display: none;
+  }
+.special-show{
+  display: block;
+}

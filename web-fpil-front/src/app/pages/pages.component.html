@@ -1,0 +1,48 @@
+<div class="top-tab">
+  <div class="top-main"> 
+      <img src="assets/img/stlogo.png" alt="">
+  </div>
+  <div class="top-right">
+    <div class="right-above">
+      <div style="margin-bottom: 16px;">
+        <nz-input-group [nzAddOnBefore]="addOnBeforeTemplate" [nzAddOnAfter]="addOnAfterTemplate">
+          <input type="text" nz-input [(ngModel)]="inputValue">
+        </nz-input-group>
+        <ng-template #addOnBeforeTemplate>
+          <nz-dropdown>
+            <a nz-dropdown>
+              <i nz-icon type="down"></i>
+            </a>
+            <ul nz-menu nzSelectable>
+              <li nz-menu-item>
+                <a>1st menu item</a>
+              </li>
+              <li nz-menu-item>
+                <a>2nd menu item</a>
+              </li>
+              <li nz-menu-item>
+                <a>3rd menu item</a>
+              </li>
+            </ul>
+          </nz-dropdown>
+        </ng-template>
+        <ng-template #addOnAfterTemplate>
+          <span><i nz-icon type="search"></i></span>
+        </ng-template>
+      </div>
+    </div>
+    <div class="right-down">
+      <span>
+        <img src="assets/img/menu.png" alt=""><a href="#">Product Catalog</a>
+      </span>
+      <span>
+        <img src="assets/img/menu.png" alt=""><a href="#">English</a>
+      </span>
+      <span class="span-last">
+        <img src="assets/img/menu.png" alt=""><a href="#" class="last">Login</a>
+      </span>
+    </div>
+</div>
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>      

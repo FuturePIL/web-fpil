@@ -1,0 +1,26 @@
+<div class="home">
+  <div class='main-mennu'>
+    <ul>
+      <li (click)="show=!show">1</li>
+      <li (click)="show=!show">2</li>
+      <li (click)="show=!show">3</li>
+    </ul>
+  </div>
+  <div class="main-card" [class.special-show]="show">
+      <nz-card style="width:300px;" nzTitle="Card title" [nzExtra]="extraTemplate">
+          <p>Card content</p>
+          <p>Card content</p>
+          <p>Card content</p>
+        </nz-card>
+        <ng-template #extraTemplate>
+          <a>More</a>
+        </ng-template>
+  </div>
+  <div class="slide-show">
+    <nz-carousel nzAutoPlay>
+      <div nz-carousel-content *ngFor="let index of array">
+        <h3>{{index}}</h3>
+      </div>
+    </nz-carousel>
+  </div>
+</div>
